@@ -1,0 +1,41 @@
+<style>
+// It styles the appearance of FAQ headers, including their size, color, and arrow icon.
+
+body .faq-header a{
+	position: relative;
+	display: block;
+	cursor: pointer;
+	padding: 18px 5px 18px 5px;
+	border-top: 1px solid #cccccc;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 32px;
+	color: #111;
+	font-family: "museo-sans", sans-serif !important;
+}
+
+body .faq-header a:after{
+	position: absolute;
+	content: "";
+	background: url(https://securedevserver.com/natouch-new/wp-content/uploads/2024/04/down-arrow.svg) no-repeat center / contain;
+	width: 18px;
+	height: 20px;
+	right: -7px;
+	top: 26px;
+}
+
+body .faq-contentbox {
+	display: none;
+	margin: 0;
+	padding: 0 32px 30px 6px;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: -0.01em;
+	color: #666;
+}
+
+body .faq-section.active .faq-header a:after{
+	transform: rotate(180deg); 
+	opacity: 1;
+}
+</style>
